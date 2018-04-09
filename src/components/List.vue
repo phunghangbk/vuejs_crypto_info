@@ -2,7 +2,7 @@
   <div class="list">
     <ul v-for="ticker in coin_tickers">
       <li>
-        <img src="getImg(ticker.id)">
+        <img :src="getImg(ticker.id)">
       </li>
     </ul>
   </div>
@@ -37,8 +37,7 @@ export default {
     },
 
     getImg(name) {
-    console.log('../assets/service_logo/' + name + '_logo.jpg');
-      return '../assets/service_logo/' + name + '_logo.jpg';
+      return '../../static/service_logo/' + name + '_logo.jpg';
     }
   }
 }
