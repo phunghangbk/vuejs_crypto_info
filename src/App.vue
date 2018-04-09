@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <router-link :to=" {name: 'HelloWorld'} ">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/coins/ethereum">Ethereum</router-link>
-    <router-link to="/coins/bitcoin">Bitcoin</router-link>
+    <div class="header">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/coins/ethereum">Ethereum</router-link>
+      <router-link to="/coins/bitcoin">Bitcoin</router-link>
+    </div>
+
+    <div class="container">
+    </div>
+
     <router-view/>
   </div>
 </template>
