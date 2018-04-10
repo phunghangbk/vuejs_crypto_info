@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import About from '@/components/About'
 import Coins from '@/components/Coins'
-import List from '@/components/List'
 
 Vue.use(Router)
 
@@ -24,11 +23,6 @@ export default new Router({
         path: '/coins/:id',
         name: 'Coins',
         component: Coins
-    },
-    {
-        path: '/list',
-        name: 'List',
-        component: List
     }
   ]
 })

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import List from '@/components/List'
+import List from '@/components/list'
 export default {
   name: 'Hello',
   data () {
@@ -20,3 +20,9 @@ export default {
 }
 </script>
 
+<style scoped>
+  h1 {
+    font-size: 4em;
+    color: #d3e022;
+  }
+</style>
