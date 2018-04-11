@@ -1,23 +1,37 @@
 <template>
-  <ul>
-    <li  v-for="ticker in coin_tickers">
-      <h1>{{ticker.name}}</h1>
-      <img v-lazy="{src: getImg(ticker.id), loading: lazyload.loading, error: lazyload.error}" />
-      <div>
-        <p>Symbol: {{ ticker.symbol }}</p>
-        <p>Price (USD): {{ ticker.price_usd }}</p>
-      </div>
-    </li>
-  </ul>
+  <div class="list">
+    <div class="row">
+      <ul class="cryptoList">
+      <li  v-for="ticker in tickersOnPerPage">
+        <h1>{{ticker.name}}</h1>
+        <img v-lazy="{src: getImg(ticker.id), loading: lazyload.loading, error: lazyload.error}" />
+        <div>
+          <p>Symbol: {{ ticker.symbol }}</p>
+          <p>Price (USD): {{ ticker.price_usd }}</p>
+        </div>
+      </li>
+    </ul>
+    </div>
+
+    <div class="row">
+      <pagination :current-page="pageOne.currentPage"
+                :total-items="coin_tickers.length"
+                :items-per-page="pageOne.itemPerPage"
+                @pagechanged="pageOneChanged"
+                ref="pagination"
+      >
+      </pagination>
+    </div>
+  </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import axios from 'axios'
 import VueLazyload from 'vue-lazyload'
+import Pagination from '@/components/Pagination'
 
 Vue.use(VueLazyload)
-
 export default {
   name: 'List',
 
@@ -27,6 +41,10 @@ export default {
       lazyload: {
         error: '../../static/service_logo/coin_default_logo.jpg',
         loading: '../../static/service_logo/loading.gif'
+      },
+      pageOne: {
+        currentPage: 1,
+        itemPerPage: 10
       }
     }
   },
@@ -40,7 +58,6 @@ export default {
       axios.get('https://api.coinmarketcap.com/v1/ticker/')
       .then((resp) => {
         this.coin_tickers = resp.data
-        console.log(this.coin_tickers)
       })
       .catch((err) => {
         console.log(err)
@@ -49,16 +66,36 @@ export default {
 
     getImg(name) {
       return '../../static/service_logo/' + name + '_logo.jpg';
+    },
+
+    pageOneChanged (pageNum) {
+      this.pageOne.currentPage = pageNum
     }
+  },
+
+  computed: {
+    tickersOnPerPage() {
+      let currentPage = this.$refs.currentPage;
+      let perPage = this.$refs.itemsPerPage;
+      let total = this.$refs.totalItems;
+      let newCoinTickers = this.coin_tickers;
+      // console.log(newCoinTickers);
+      // newCoinTickers = newCoinTickers.slice(0, 9);
+      console.log(newCoinTickers);
+      return newCoinTickers;
+    }
+  },
+  components: {
+    Pagination
   }
 }
 </script>
 
 <style scoped>
-  ul {
+  ul.cryptoList {
     display: block;
   }
-  li {
+  ul.cryptoList > li {
     list-style: none;
     width: 400px;
     float: left;
@@ -69,7 +106,11 @@ export default {
     height: 300px;
     background-color: white;
   }
-  img {
+  ul.cryptoList > li > img {
     width: 120px;
+  }
+
+  div.row {
+    height: 50%;
   }
 </style>
