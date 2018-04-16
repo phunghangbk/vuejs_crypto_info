@@ -2,25 +2,28 @@
   <div class="list">
     <div class="row">
       <ul class="cryptoList">
-      <li  v-for="ticker in tickersOnPerPage">
-        <h1>{{ticker.name}}</h1>
-        <img v-lazy="{src: getImg(ticker.id), loading: lazyload.loading, error: lazyload.error}" />
-        <div>
-          <p>Symbol: {{ ticker.symbol }}</p>
-          <p>Price (USD): {{ ticker.price_usd }}</p>
-        </div>
-      </li>
-    </ul>
+        <li  v-for="ticker in tickersOnPerPage">
+          <h1>{{ticker.name}}</h1>
+          <img v-lazy="{src: getImg(ticker.id), loading: lazyload.loading, error: lazyload.error}" />
+          <div>
+            <p>Symbol: {{ ticker.symbol }}</p>
+            <p>Price (USD): {{ ticker.price_usd }}</p>
+          </div>
+        </li>
+      </ul>
     </div>
 
-    <div class="row">
+    <div>
       <pagination :current-page="pageOne.currentPage"
                 :total-items="coin_tickers.length"
-                :items-per-page="pageOne.itemPerPage"
+                :items-per-page="pageOne.itemsPerPage"
                 @pagechanged="pageOneChanged"
-                ref="pagination"
       >
       </pagination>
+    </div>
+    <div>
+      <filterCustom :post-list="coin_tickers"
+      ></filterCustom>
     </div>
   </div>
 </template>
@@ -30,6 +33,7 @@ import Vue from 'vue'
 import axios from 'axios'
 import VueLazyload from 'vue-lazyload'
 import Pagination from '@/components/Pagination'
+import FilterCustom from '@/components/FilterCustom'
 
 Vue.use(VueLazyload)
 export default {
@@ -37,14 +41,14 @@ export default {
 
   data() {
     return {
-      coin_tickers: {},
+      coin_tickers: [],
       lazyload: {
         error: '../../static/service_logo/coin_default_logo.jpg',
         loading: '../../static/service_logo/loading.gif'
       },
       pageOne: {
         currentPage: 1,
-        itemPerPage: 10
+        itemsPerPage: 10
       }
     }
   },
@@ -57,7 +61,7 @@ export default {
     fetchData() {
       axios.get('https://api.coinmarketcap.com/v1/ticker/')
       .then((resp) => {
-        this.coin_tickers = resp.data
+        this.coin_tickers = resp.data;
       })
       .catch((err) => {
         console.log(err)
@@ -75,18 +79,15 @@ export default {
 
   computed: {
     tickersOnPerPage() {
-      let currentPage = this.$refs.currentPage;
-      let perPage = this.$refs.itemsPerPage;
-      let total = this.$refs.totalItems;
-      let newCoinTickers = this.coin_tickers;
-      // console.log(newCoinTickers);
-      // newCoinTickers = newCoinTickers.slice(0, 9);
-      console.log(newCoinTickers);
-      return newCoinTickers;
+      let currentPage = this.pageOne.currentPage;
+      let perPage = this.pageOne.itemsPerPage;
+      let total = this.coin_tickers.length;
+      
+      return this.coin_tickers.slice((currentPage - 1) * perPage + 1, currentPage * perPage);
     }
   },
   components: {
-    Pagination
+    Pagination, FilterCustom
   }
 }
 </script>

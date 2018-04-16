@@ -48,6 +48,6 @@ img {
 
 body {
   padding-top: 40px;
-  background-image: url('../static/service_logo/background-image.jpg');
+  /*background-image: url('../static/service_logo/background-image.jpg');*/
 }
 </style>
