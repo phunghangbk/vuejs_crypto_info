@@ -1,6 +1,6 @@
 <template>
 <div id="filter">
-  <div class="search-wrapper">
+  <div class="row">
     <div>
       <select v-model="selected">
         <option v-for="(field, key) in parseFilterField" :value="key">{{field}}</option>
@@ -8,16 +8,18 @@
       <input placeholder="filter value" v-model="search" />
     </div>
   </div>
-  <div class="wrapper">
-    <div class="card" v-for="post in filteredList">
-      <div>
+  <div class="row">
+    <ul class="cryptoList">
+      <li  v-for="post in filteredList">
+        <h1>{{post.name}}</h1>
         <img v-lazy="{src: getImg(post.id), loading: lazyload.loading, error: lazyload.error}" />
-        <p>id: {{post.id}}</p>
-        <p>name: {{post.name}}</p>
-        <p>Symbol: {{ post.symbol }}</p>
-        <p>Price (USD): {{ post.price_usd }}</p>
-      </div>
-    </div>
+        <div>
+          <p>id: {{post.id}}</p>
+          <p>Symbol: {{ post.symbol }}</p>
+          <p>Price (USD): {{ post.price_usd }}</p>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 </template>
@@ -108,3 +110,27 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  ul.cryptoList {
+    display: block;
+  }
+  ul.cryptoList > li {
+    list-style: none;
+    width: 400px;
+    float: left;
+    display: block;
+    border: 1px solid #ccc!important;
+    border-radius: 16px;
+    margin: 10px;
+    height: 320px;
+    background-color: white;
+  }
+  ul.cryptoList > li > img {
+    width: 120px;
+  }
+
+  div.row {
+    height: 50%;
+  }
+</style>

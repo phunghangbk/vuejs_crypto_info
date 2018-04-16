@@ -1,6 +1,6 @@
 <template>
   <div class="list">
-    <div class="row">
+    <!-- <div class="row">
       <ul class="cryptoList">
         <li  v-for="ticker in tickersOnPerPage">
           <h1>{{ticker.name}}</h1>
@@ -11,7 +11,7 @@
           </div>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <div>
       <pagination :current-page="pageOne.currentPage"
