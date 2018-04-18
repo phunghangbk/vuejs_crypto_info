@@ -81,8 +81,8 @@ export default {
       var searchWord = this.parseSearchWord(this.search);
       if (typeof searchWord == 'string') {
         return this.postList.filter(post => {
-          return post[this.selected].toLowerCase().includes(this.search.toLowerCase());
-        })
+          return post[this.selected].toLowerCase().includes(searchWord.toLowerCase());
+        });
       } else {
         return this.postList.filter(post => {
           return Number(post[this.selected].toLowerCase().replace(/[^0-9\.-]+/g,"")) >= Number(searchWord[0]) 

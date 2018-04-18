@@ -76,6 +76,7 @@ export default {
 
     filterOnChanged (filteredItems) {
       this.filteredItems = filteredItems;
+      this.pageOne.currentPage = 1;
     }
   },
 
@@ -84,8 +85,7 @@ export default {
       let currentPage = this.pageOne.currentPage;
       let perPage = this.pageOne.itemsPerPage;
       let total = this.filteredItems.length;
-      
-      return this.filteredItems.slice((currentPage - 1) * perPage + 1, currentPage * perPage + 1);
+      return this.filteredItems.slice((currentPage - 1) * perPage, currentPage * perPage);
     }
   },
   components: {

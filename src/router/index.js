@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import About from '@/components/About'
 import Coins from '@/components/Coins'
-
+import AboutAuthor from '@/components/AboutAuthor'
 Vue.use(Router)
 
 export default new Router({
@@ -15,14 +15,19 @@ export default new Router({
       component: Hello
     },
     {
-        path: '/about',
-        name: 'About',
-        component: About
+      path: '/about',
+      name: 'About',
+      component: About
     },
     {
-        path: '/coins/:id',
-        name: 'Coins',
-        component: Coins
+      path: '/coins/:id',
+      name: 'Coins',
+      component: Coins
+    },
+    {
+      path: '/aboutAuthor',
+      name: 'AboutAuthor',
+      component: AboutAuthor
     }
   ]
 })

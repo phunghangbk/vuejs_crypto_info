@@ -7,11 +7,16 @@
       <router-link to="/coins/ethereum">Ethereum</router-link>
       <router-link to="/coins/bitcoin">Bitcoin</router-link>
     </div>
-
-    <div class="container">
-    </div>
-
     <router-view/>
+    <div id="footer">
+      <div class="inner">
+        <ul class="nav">
+          <li><router-link to="/about">About Crypto-Currency</router-link></li>
+          <li><router-link to="/aboutAuthor">About Author</router-link></li>
+        </ul>
+        <address class="copyright">Copyright(C) Hang Phung</address>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,5 +54,37 @@ img {
 body {
   padding-top: 40px;
   /*background-image: url('../static/service_logo/background-image.jpg');*/
+}
+
+#footer {
+  padding: 0 0 10px 0;;
+  background-color: #807E7F;
+  text-align: center;
+  color: #fff;
+}
+
+#footer .inner {
+  width: 80%;
+  margin: 0 auto;
+}
+ul.nav {
+  display: inline-block;
+}
+ul.nav > li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border: 0;
+}
+ul.nav > li {
+  display: inline-block;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid;
+  line-height: 1;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+ul.nav > li > a {
+  color: white;
 }
 </style>
