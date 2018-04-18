@@ -1,6 +1,10 @@
 <template>
   <div class="list">
-    <!-- <div class="row">
+    <div>
+      <filterCustom :post-list="coin_tickers" @filterChanged="filterOnChanged"
+      ></filterCustom>
+    </div>
+    <div class="row">
       <ul class="cryptoList">
         <li  v-for="ticker in tickersOnPerPage">
           <h1>{{ticker.name}}</h1>
@@ -11,19 +15,12 @@
           </div>
         </li>
       </ul>
-    </div> -->
-
-    <div>
       <pagination :current-page="pageOne.currentPage"
-                :total-items="coin_tickers.length"
-                :items-per-page="pageOne.itemsPerPage"
-                @pagechanged="pageOneChanged"
+              :total-items="filteredItems.length"
+              :items-per-page="pageOne.itemsPerPage"
+              @pagechanged="pageOnChanged"
       >
       </pagination>
-    </div>
-    <div>
-      <filterCustom :post-list="coin_tickers"
-      ></filterCustom>
     </div>
   </div>
 </template>
@@ -48,8 +45,9 @@ export default {
       },
       pageOne: {
         currentPage: 1,
-        itemsPerPage: 10
-      }
+        itemsPerPage: 12
+      },
+      filteredItems: []
     }
   },
 
@@ -61,7 +59,7 @@ export default {
     fetchData() {
       axios.get('https://api.coinmarketcap.com/v1/ticker/')
       .then((resp) => {
-        this.coin_tickers = resp.data;
+        this.filteredItems = this.coin_tickers = resp.data;
       })
       .catch((err) => {
         console.log(err)
@@ -72,8 +70,12 @@ export default {
       return '../../static/service_logo/' + name + '_logo.jpg';
     },
 
-    pageOneChanged (pageNum) {
+    pageOnChanged (pageNum) {
       this.pageOne.currentPage = pageNum
+    },
+
+    filterOnChanged (filteredItems) {
+      this.filteredItems = filteredItems;
     }
   },
 
@@ -81,9 +83,9 @@ export default {
     tickersOnPerPage() {
       let currentPage = this.pageOne.currentPage;
       let perPage = this.pageOne.itemsPerPage;
-      let total = this.coin_tickers.length;
+      let total = this.filteredItems.length;
       
-      return this.coin_tickers.slice((currentPage - 1) * perPage + 1, currentPage * perPage);
+      return this.filteredItems.slice((currentPage - 1) * perPage + 1, currentPage * perPage + 1);
     }
   },
   components: {
@@ -94,7 +96,8 @@ export default {
 
 <style scoped>
   ul.cryptoList {
-    display: block;
+    display: inline-block;
+    height: auto;
   }
   ul.cryptoList > li {
     list-style: none;
@@ -110,8 +113,10 @@ export default {
   ul.cryptoList > li > img {
     width: 120px;
   }
-
-  div.row {
-    height: 50%;
+  .list {
+    height: 100%;
+  }
+  .row {
+    height: 100%;
   }
 </style>

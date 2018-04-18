@@ -5,29 +5,13 @@
       <select v-model="selected">
         <option v-for="(field, key) in parseFilterField" :value="key">{{field}}</option>
       </select>
-      <input placeholder="filter value" v-model="search" />
+      <input placeholder="filter value" v-model="search" @change="filterChanged" @keyup="filterChanged"/>
     </div>
-  </div>
-  <div class="row">
-    <ul class="cryptoList">
-      <li  v-for="post in filteredList">
-        <h1>{{post.name}}</h1>
-        <img v-lazy="{src: getImg(post.id), loading: lazyload.loading, error: lazyload.error}" />
-        <div>
-          <p>id: {{post.id}}</p>
-          <p>Symbol: {{ post.symbol }}</p>
-          <p>Price (USD): {{ post.price_usd }}</p>
-        </div>
-      </li>
-    </ul>
   </div>
 </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import VueLazyload from 'vue-lazyload'
-Vue.use(VueLazyload)
 export default {
   name: 'FilterCustom',
   props: {
@@ -43,10 +27,6 @@ export default {
   data: function() {
     return {
       search: '',
-      lazyload: {
-        error: '../../static/service_logo/coin_default_logo.jpg',
-        loading: '../../static/service_logo/loading.gif'
-      },
       selected: ''
     }
   },
@@ -72,6 +52,9 @@ export default {
       }
 
       return result.length > 0 ? result : searchWord;
+    },
+    filterChanged() {
+      this.$emit('filterChanged', this.filteredList);
     }
   },
   computed: {

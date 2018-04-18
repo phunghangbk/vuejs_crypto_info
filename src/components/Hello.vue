@@ -25,4 +25,7 @@ export default {
     font-size: 4em;
     color: #d3e022;
   }
+  .hello {
+    height: 100%;
+  }
 </style>
