@@ -4,6 +4,8 @@ import Hello from '@/components/Hello'
 import About from '@/components/About'
 import Coins from '@/components/Coins'
 import AboutAuthor from '@/components/AboutAuthor'
+import CoinDetail from '@/components/CoinDetail'
+
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +30,22 @@ export default new Router({
       path: '/aboutAuthor',
       name: 'AboutAuthor',
       component: AboutAuthor
+    },
+    {
+      path: '/coinDetail',
+      name: 'CoinDetail',
+      component: CoinDetail,
+      props: (route) => ({ 
+        id: route.query.id, 
+        priceUSD: route.query.usd, 
+        priceBTC: route.query.btc, 
+        marketcap: route.query.marketcap, 
+        volume24h: route.query.volume24h, 
+        availablesupply: route.query.availablesupply, 
+        totalsupply: route.query.totalsupply,
+        name: route.query.name,
+        maxsupply: route.query.maxsupply
+      })
     }
   ]
 })

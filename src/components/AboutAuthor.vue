@@ -48,4 +48,10 @@
     display: flex;
     align-items: center;
   }
+  #profile > div > a > img {
+    width: 120px;
+  }
+  #profile > div > p > img {
+    width: 120px;
+  }
 </style>

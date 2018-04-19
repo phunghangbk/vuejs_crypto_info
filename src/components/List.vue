@@ -7,12 +7,27 @@
     <div class="row">
       <ul class="cryptoList">
         <li  v-for="ticker in tickersOnPerPage">
-          <h1>{{ticker.name}}</h1>
-          <img v-lazy="{src: getImg(ticker.id), loading: lazyload.loading, error: lazyload.error}" />
-          <div>
-            <p>Symbol: {{ ticker.symbol }}</p>
-            <p>Price (USD): {{ ticker.price_usd }}</p>
-          </div>
+          <router-link :to="{
+            path:'/coinDetail', 
+            query:{
+              id:ticker.id,
+              priceUSD:ticker.price_usd,
+              priceBTC:ticker.price_btc,
+              marketcap:ticker.market_cap_usd,
+              volume24h:ticker['24h_volume_usd'],
+              availablesupply:ticker.available_supply,
+              totalsupply: ticker.total_supply,
+              name: ticker.name,
+              maxsupply: ticker.max_supply
+            }
+          }">
+            <h1>{{ticker.name}}</h1>
+            <img v-lazy="{src: getImg(ticker.id), loading: lazyload.loading, error: lazyload.error}" />
+            <div>
+              <p>Symbol: {{ ticker.symbol }}</p>
+              <p>Price (USD): {{ ticker.price_usd }}</p>
+            </div>
+          </router-link>
         </li>
       </ul>
       <pagination :current-page="pageOne.currentPage"
@@ -60,6 +75,7 @@ export default {
       axios.get('https://api.coinmarketcap.com/v1/ticker/')
       .then((resp) => {
         this.filteredItems = this.coin_tickers = resp.data;
+        console.log(this.coin_tickers[1].max_supply);
       })
       .catch((err) => {
         console.log(err)
@@ -110,7 +126,7 @@ export default {
     height: 300px;
     background-color: white;
   }
-  ul.cryptoList > li > img {
+  img {
     width: 120px;
   }
   .list {

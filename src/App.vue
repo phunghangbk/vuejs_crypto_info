@@ -47,7 +47,7 @@ export default {
   z-index: 50;
 }
 
-img {
+#app .header > img {
   width:120px;
 }
 

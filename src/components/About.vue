@@ -21,20 +21,6 @@
           </li>
         </ul>
       </div>
-      <div class="card-counters">
-        <div class="reddit-voting"> 
-          <a title="Login to upvote" class="clickable" data-href="https://blockgeeks.com/profile/login">
-            <div class="arrow2 arrow_box up  arrow-up-8526" data-red-current="0" data-red-like="up" data-red-id="8526" role="button" aria-label="upvote" tabindex="0">
-              <div class="score unvoted score-8526" data-red-current="0">
-              31
-              </div>
-            </div> 
-          </a>
-          <a title="27 comments" class="speech-bubble" href="https://blockgeeks.com/guides/what-is-cryptocurrency/#comments" rel="nofollow">
-            27
-          </a>
-        </div>
-      </div>
       <div class="card-desc">
         <p>
           What is cryptocurrency: &nbsp;21st-century unicorn – or the money of the future?
@@ -499,7 +485,124 @@
         <p>Source: <a rel="nofollow" href="https://coinmarketcap.com/)">coinmarketcap</a>
         </p>
         <p>
-          <b>Bitcoin</b></p><p><span style="font-weight: 400;">The one and only, the first and most famous cryptocurrency. Bitcoin serves as a digital gold standard in the whole cryptocurrency-industry, is used as a global means of payment and is the de-facto currency of cyber-crime like darknet markets or ransomware. After seven years in existence, Bitcoin‘s price has increased from zero to more than 650 Dollar, and its transaction volume reached more than 200.000 daily transactions.</span></p><p><span style="font-weight: 400;">There is not much more to say: Bitcoin is here to stay.</span></p><p><a rel="nofollow" href="http://blockgeeks.com/guides/what-is-ethereum-a-step-by-step-beginners-guide/"><b>Ethereum</b></a></p><p><span style="font-weight: 400;">The brainchild of young crypto-genius Vitalik Buterin has ascended to the second place in the hierarchy of cryptocurrencies. Other than Bitcoin its blockchain does not only validate a set of accounts and balances but of so-called states. This means that Ethereum can not only process transactions but complex contracts and programs.</span></p><p><span style="font-weight: 400;">This flexibility makes Ethereum the perfect instrument for blockchain -application. But it comes at a cost. After the Hack of the DAO – an Ethereum based smart contract – the developers decided to do a hard fork without consensus, which resulted in the emerge of <a href="https://blockgeeks.com/guides/what-is-ethereum-classic/">Ethereum Classic</a>. Besides this, there are several clones of Ethereum, and <a href="https://blockgeeks.com/guides/ethereum-token/">Ethereum itself is a host of several Tokens</a> like DigixDAO and Augur. This makes Ethereum more a family of cryptocurrencies than a single currency.</span></p><p><b>Ripple</b></p><p><span style="font-weight: 400;">Maybe the less popular – or most hated – project in the cryptocurrency community is Ripple. While Ripple has a native cryptocurrency – XRP – it is more about a network to process IOUs than the cryptocurrency itself. XRP, the currency, doesn‘t serve as a medium to store and exchange value, but more as a token to protect the network against spam.</span></p><p><span style="font-weight: 400;">Ripple Labs created every XRP-token, the company running the Ripple network, and is distributed by them on will. For this reason, Ripple is often called pre-mined in the community and dissed as no real cryptocurrency, and XRP is not considered as a good store of value.</span></p><p><span style="font-weight: 400;">Banks, however, seem to like Ripple. At least they adopt the system with an increasing pace.</span></p><p><b>Litecoin</b></p><p><span style="font-weight: 400;">Litecoin was one of the first cryptocurrencies after Bitcoin and tagged as the silver to the digital gold bitcoin. Faster than bitcoin, with a larger amount of token and a new mining algorithm, Litecoin was a real innovation, perfectly tailored to be the smaller brother of bitcoin. “It facilitated the emerge of several other cryptocurrencies which used its codebase but made it, even more, lighter“. Examples are Dogecoin or Feathercoin.</span></p><p><span style="font-weight: 400;">While Litecoin failed to find a real use case and lost its second place after bitcoin, it is still actively developed and traded and is hoarded as a backup if Bitcoin fails.</span></p><p><b>Monero</b></p><p><span style="font-weight: 400;"><a href="https://blockgeeks.com/guides/what-is-monero/">Monero </a>is the most prominent example of the cryptonite algorithm. This algorithm was invented to add the privacy features Bitcoin is missing. If you use Bitcoin, every transaction is documented in the blockchain and the trail of transactions can be followed. With the introduction of a concept called ring-signatures, the cryptonite algorithm was able to cut through that trail.</span></p><p><span style="font-weight: 400;">The first implementation of cryptonite, Bytecoin, was heavily premined and thus rejected by the community. Monero was the first non-premined clone of bytecoin and raised a lot of awareness. There are several other incarnations of cryptonote with their own little improvements, but none of it did ever achieve the same popularity as Monero.</span></p><p><span style="font-weight: 400;"><a href="https://blockgeeks.com/guides/what-is-monero/">Monero‘s </a>popularity peaked in summer 2016 when some darknetmarkets decided to accept it as a currency. This resulted in a steady increase in the price, while the actual usage of Monero seems to remain disappointingly small.</span></p><p><span style="font-weight: 400;">Besides those, there are hundreds of cryptocurrencies of several families. Most of them are nothing more than attempts to reach investors and quickly make money, but a lot of them promise playgrounds to test innovations in cryptocurrency-technology.</span></p><p>&nbsp;</p><p><img class="alignnone wp-image-51152 size-full" src="https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1.png" alt="What is cryptocurrency" width="1220" height="1019" srcset="https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1.png 1220w, https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1-300x251.png 300w, https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1-768x641.png 768w, https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1-1024x855.png 1024w" sizes="(max-width: 1220px) 100vw, 1220px"></p><p>&nbsp;</p><h2>What is the future of Cryptocurrency?</h2><p><span style="font-weight: 400;">The market of cryptocurrencies is fast and wild. Nearly every day new cryptocurrencies emerge, old die, early adopters get wealthy and investors lose money. Every cryptocurrency comes with a promise, mostly a big story to turn the world around. Few survive the first months, and most are pumped and dumped by speculators and live on as zombie coins until the last bagholder loses hope ever to see a return on his investment.</span></p><p>&nbsp;</p><hr><p><em><strong><img class="wp-image-51159 size-thumbnail alignleft" src="https://blockgeeks.com/wp-content/uploads/2016/11/Cody-Littlewood-and-I’m-the-founder-and-CEO-of-Codelitt-1-150x150.png" alt="cody-littlewood-and-im-the-founder-and-ceo-of-codelitt" width="150" height="150" srcset="https://blockgeeks.com/wp-content/uploads/2016/11/Cody-Littlewood-and-I’m-the-founder-and-CEO-of-Codelitt-1-150x150.png 150w, https://blockgeeks.com/wp-content/uploads/2016/11/Cody-Littlewood-and-I’m-the-founder-and-CEO-of-Codelitt-1.png 300w" sizes="(max-width: 150px) 100vw, 150px"><br> “In 2 years from now, I believe cryptocurrencies will be gaining legitimacy as a protocol for business transactions, micropayments, and overtaking</strong></em>Western Union<em><strong> as the preferred remittance tool. &nbsp;</strong></em><strong style="font-style: italic;">Regarding business transactions – you’ll see two paths: There will be financial businesses which use it for it’s no fee, nearly-instant ability to move any amount of money around, and there will be those that utilize </strong><em><strong>it</strong><strong>&nbsp;for its blockchain technology. Blockchain technology provides the largest benefit with trustless auditing, single source of truth, smart contracts, and color coins.” &nbsp; </strong></em></p><p><em><strong>–&nbsp;</strong></em><a rel="nofollow" href="http://www.codelitt.com/blog/author/cody-littlewood/">Cody Littlewood,</a> and I’m the founder and CEO of Codelitt</p><p>&nbsp;</p><hr><p>&nbsp;</p><p><span style="font-weight: 400;">Markets are dirty. But this doesn‘t change the fact that cryptocurrencies are here to stay – and here to change the world. This is already happening. People all over the world buy Bitcoin to protect themselves against the devaluation of their national currency. Mostly in Asia, a vivid market for Bitcoin remittance has emerged, and the Bitcoin using darknets of cybercrime are flourishing. More and more companies discover the power of <a href="https://blockgeeks.com/guides/smart-contracts/">Smart Contracts</a> or token on Ethereum, the first real-world application of blockchain technologies emerge.</span></p><p><span style="font-weight: 400;">The revolution is already happening. Institutional investors start to buy cryptocurrencies. Banks and governments realize that this invention has the potential to draw their control away. Cryptocurrencies change the world. Step by step. You can either stand beside and observe – or you can become part of history in the making.</span></p><p>&nbsp;</p><hr><p><img class="wp-image-51166 size-thumbnail alignleft" src="https://blockgeeks.com/wp-content/uploads/2016/11/Brad-Mills-What-is-Cryptocurrency-1-150x150.png" alt="brad-mills-what-is-cryptocurrency" width="150" height="150" srcset="https://blockgeeks.com/wp-content/uploads/2016/11/Brad-Mills-What-is-Cryptocurrency-1-150x150.png 150w, https://blockgeeks.com/wp-content/uploads/2016/11/Brad-Mills-What-is-Cryptocurrency-1.png 300w" sizes="(max-width: 150px) 100vw, 150px"></p><p>&nbsp;</p><p>“If the trend continues, the average person will not be able to afford to purchase one whole bitcoin in 2 years. As global economies inflate and markets exhibit signs of recession, the world will turn to Bitcoin as a hedge against fiat turmoil and an escape against capital controls. Bitcoin is the way out, and cryptocurrency as a whole is never going away, it’s going to grow in use and acceptance as it matures.”</p><p>– <a rel="nofollow" href="http://www.bradmills.ca">Brad Mills: Serial Tech Entrepreneur&nbsp;</a></p><p>&nbsp;</p><p>&nbsp;</p><hr><p>&nbsp;</p><div class="nc_socialPanel swp_threeDee swp_d_fullColor swp_i_fullColor swp_o_fullColor scale-100 scale-fullWidth swp_one" data-position="below" data-float="floatBottom" data-count="5" data-floatcolor="#ffffff" data-emphasize="0" style="opacity: 1;"><div class="nc_tweetContainer twitter" data-id="2" data-network="twitter"><a rel="nofollow" target="_blank" href="https://twitter.com/share?original_referer=/&amp;text=What+is+Cryptocurrency%3A+Everything+You+Need+To+Know+%5BUltimate+Guide%5D&amp;url=https://blockgeeks.com/guides/what-is-cryptocurrency/%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3DSocialWarfare%2FBG&amp;via=Blockgks" data-link="https://twitter.com/share?original_referer=/&amp;text=What+is+Cryptocurrency%3A+Everything+You+Need+To+Know+%5BUltimate+Guide%5D&amp;url=https://blockgeeks.com/guides/what-is-cryptocurrency/%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3DSocialWarfare%2FBG&amp;via=Blockgks" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-twitter"></i><span class="swp_share"> Tweet</span></span></span><span class="swp_count" style="transition: padding 0.1s linear;">80</span></a></div><div class="nc_tweetContainer swp_fb" data-id="3" data-network="facebook"><a rel="nofollow" target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fblockgeeks.com%2Fguides%2Fwhat-is-cryptocurrency%2F%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3DSocialWarfare%2FBG" data-link="http://www.facebook.com/share.php?u=https%3A%2F%2Fblockgeeks.com%2Fguides%2Fwhat-is-cryptocurrency%2F%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3DSocialWarfare%2FBG" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-facebook"></i><span class="swp_share"> Share</span></span></span><span class="swp_count" style="transition: padding 0.1s linear;">7K</span></a></div><div class="nc_tweetContainer linkedIn" data-id="4" data-network="linked_in"><a rel="nofollow" target="_blank" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fblockgeeks.com%2Fguides%2Fwhat-is-cryptocurrency%2F%3Futm_source%3DlinkedIn%26utm_medium%3Dsocial%26utm_campaign%3DSocialWarfare%2FBG" data-link="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fblockgeeks.com%2Fguides%2Fwhat-is-cryptocurrency%2F%3Futm_source%3DlinkedIn%26utm_medium%3Dsocial%26utm_campaign%3DSocialWarfare%2FBG" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-linkedin"></i><span class="swp_share"> Share</span></span></span><span class="swp_count" style="transition: padding 0.1s linear;">1K</span></a></div><div class="nc_tweetContainer swp_reddit" data-id="5" data-network="reddit"><a rel="nofollow" target="_blank" href="https://www.reddit.com/submit?url=https://blockgeeks.com/guides/what-is-cryptocurrency/&amp;title=What+is+Cryptocurrency%3A+Everything+You+Need+To+Know+%5BUltimate+Guide%5D" data-link="https://www.reddit.com/submit?url=https://blockgeeks.com/guides/what-is-cryptocurrency/&amp;title=What+is+Cryptocurrency%3A+Everything+You+Need+To+Know+%5BUltimate+Guide%5D" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-reddit"></i><span class="swp_share"> Reddit</span></span></span><span class="swp_count" style="transition: padding 0.1s linear;">20</span></a></div><div class="nc_tweetContainer totes totesalt" data-id="6"><span class="swp_count" style="transition: padding 0.1s linear;"><span class="swp_label">Shares</span> 9K</span></div></div></div></div>
+          <b>Bitcoin</b>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            The one and only, the first and most famous cryptocurrency. Bitcoin serves as a digital gold standard in the whole cryptocurrency-industry, is used as a global means of payment and is the de-facto currency of cyber-crime like darknet markets or ransomware. After seven years in existence, Bitcoin‘s price has increased from zero to more than 650 Dollar, and its transaction volume reached more than 200.000 daily transactions.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">There is not much more to say: Bitcoin is here to stay.</span>
+        </p>
+        <p>
+          <a rel="nofollow" href="http://blockgeeks.com/guides/what-is-ethereum-a-step-by-step-beginners-guide/"><b>Ethereum</b></a>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            The brainchild of young crypto-genius Vitalik Buterin has ascended to the second place in the hierarchy of cryptocurrencies. Other than Bitcoin its blockchain does not only validate a set of accounts and balances but of so-called states. This means that Ethereum can not only process transactions but complex contracts and programs.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            This flexibility makes Ethereum the perfect instrument for blockchain -application. But it comes at a cost. After the Hack of the DAO – an Ethereum based smart contract – the developers decided to do a hard fork without consensus, which resulted in the emerge of <a href="https://blockgeeks.com/guides/what-is-ethereum-classic/">Ethereum Classic</a>. Besides this, there are several clones of Ethereum, and <a href="https://blockgeeks.com/guides/ethereum-token/">Ethereum itself is a host of several Tokens</a> like DigixDAO and Augur. This makes Ethereum more a family of cryptocurrencies than a single currency.
+          </span>
+        </p>
+        <p>
+          <b>Ripple</b>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            Maybe the less popular – or most hated – project in the cryptocurrency community is Ripple. While Ripple has a native cryptocurrency – XRP – it is more about a network to process IOUs than the cryptocurrency itself. XRP, the currency, doesn‘t serve as a medium to store and exchange value, but more as a token to protect the network against spam.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            Ripple Labs created every XRP-token, the company running the Ripple network, and is distributed by them on will. For this reason, Ripple is often called pre-mined in the community and dissed as no real cryptocurrency, and XRP is not considered as a good store of value.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            Banks, however, seem to like Ripple. At least they adopt the system with an increasing pace.
+          </span>
+        </p>
+        <p>
+          <b>Litecoin</b>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            Litecoin was one of the first cryptocurrencies after Bitcoin and tagged as the silver to the digital gold bitcoin. Faster than bitcoin, with a larger amount of token and a new mining algorithm, Litecoin was a real innovation, perfectly tailored to be the smaller brother of bitcoin. “It facilitated the emerge of several other cryptocurrencies which used its codebase but made it, even more, lighter“. Examples are Dogecoin or Feathercoin.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            While Litecoin failed to find a real use case and lost its second place after bitcoin, it is still actively developed and traded and is hoarded as a backup if Bitcoin fails.
+          </span>
+        </p>
+        <p>
+          <b>Monero</b>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            <a href="https://blockgeeks.com/guides/what-is-monero/">Monero </a>is the most prominent example of the cryptonite algorithm. This algorithm was invented to add the privacy features Bitcoin is missing. If you use Bitcoin, every transaction is documented in the blockchain and the trail of transactions can be followed. With the introduction of a concept called ring-signatures, the cryptonite algorithm was able to cut through that trail.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            The first implementation of cryptonite, Bytecoin, was heavily premined and thus rejected by the community. Monero was the first non-premined clone of bytecoin and raised a lot of awareness. There are several other incarnations of cryptonote with their own little improvements, but none of it did ever achieve the same popularity as Monero.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            <a href="https://blockgeeks.com/guides/what-is-monero/">Monero‘s </a>popularity peaked in summer 2016 when some darknetmarkets decided to accept it as a currency. This resulted in a steady increase in the price, while the actual usage of Monero seems to remain disappointingly small.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            Besides those, there are hundreds of cryptocurrencies of several families. Most of them are nothing more than attempts to reach investors and quickly make money, but a lot of them promise playgrounds to test innovations in cryptocurrency-technology.
+          </span>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          <img class="alignnone wp-image-51152 size-full" src="https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1.png" alt="What is cryptocurrency" width="1220" height="1019" srcset="https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1.png 1220w, https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1-300x251.png 300w, https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1-768x641.png 768w, https://blockgeeks.com/wp-content/uploads/2016/11/infographics03-01-1-1024x855.png 1024w" sizes="(max-width: 1220px) 100vw, 1220px">
+        </p>
+        <p>&nbsp;</p>
+        <h2>What is the future of Cryptocurrency?</h2>
+        <p>
+          <span style="font-weight: 400;">
+            The market of cryptocurrencies is fast and wild. Nearly every day new cryptocurrencies emerge, old die, early adopters get wealthy and investors lose money. Every cryptocurrency comes with a promise, mostly a big story to turn the world around. Few survive the first months, and most are pumped and dumped by speculators and live on as zombie coins until the last bagholder loses hope ever to see a return on his investment.
+          </span>
+        </p>
+        <hr>
+        <p>&nbsp;</p>
+        <p>
+          <span style="font-weight: 400;">
+            Markets are dirty. But this doesn‘t change the fact that cryptocurrencies are here to stay – and here to change the world. This is already happening. People all over the world buy Bitcoin to protect themselves against the devaluation of their national currency. Mostly in Asia, a vivid market for Bitcoin remittance has emerged, and the Bitcoin using darknets of cybercrime are flourishing. More and more companies discover the power of <a href="https://blockgeeks.com/guides/smart-contracts/">Smart Contracts</a> or token on Ethereum, the first real-world application of blockchain technologies emerge.
+          </span>
+        </p>
+        <p>
+          <span style="font-weight: 400;">
+            The revolution is already happening. Institutional investors start to buy cryptocurrencies. Banks and governments realize that this invention has the potential to draw their control away. Cryptocurrencies change the world. Step by step. You can either stand beside and observe – or you can become part of history in the making.
+          </span>
+        </p>
+        <p>&nbsp;</p>
+        <hr>
+        <p>
+          <img class="wp-image-51166 size-thumbnail alignleft" src="https://blockgeeks.com/wp-content/uploads/2016/11/Brad-Mills-What-is-Cryptocurrency-1-150x150.png" alt="brad-mills-what-is-cryptocurrency" width="150" height="150" srcset="https://blockgeeks.com/wp-content/uploads/2016/11/Brad-Mills-What-is-Cryptocurrency-1-150x150.png 150w, https://blockgeeks.com/wp-content/uploads/2016/11/Brad-Mills-What-is-Cryptocurrency-1.png 300w" sizes="(max-width: 150px) 100vw, 150px">
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          “If the trend continues, the average person will not be able to afford to purchase one whole bitcoin in 2 years. As global economies inflate and markets exhibit signs of recession, the world will turn to Bitcoin as a hedge against fiat turmoil and an escape against capital controls. Bitcoin is the way out, and cryptocurrency as a whole is never going away, it’s going to grow in use and acceptance as it matures.”
+        </p>
+        <p>
+          – <a rel="nofollow" href="http://www.bradmills.ca">Brad Mills: Serial Tech Entrepreneur&nbsp;</a>
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <hr>
+        <p>&nbsp;</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -509,6 +612,15 @@
   }
 </script>
 <style scoped>
+  .about {
+    margin-top: 75px;
+    position: relative;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: 'Roboto Slab' !important;
+  }
   hr {
     max-width: 52.5rem;
     height: 0;
@@ -521,5 +633,54 @@
   }
   h3 {
     font-family: 'Roboto Slab' !important;
+  }
+  .post-categories {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+  .post-categories li {
+    padding-left: 0.6em;
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+  .post-categories li:before {
+    content: "#";
+    color: #00ABED;
+    display: inline-block;
+    margin-left: -0.6em;
+    width: 0.6em;
+  }
+  p {
+    font-size: inherit;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-rendering: optimizeLegibility;
+  }
+  .guides p {
+    word-wrap: break-word;
+  }
+  blockquote, blockquote p {
+    line-height: 1.6;
+    color: #8a8a8a;
+  }
+  blockquote {
+    margin: 0 0 1rem;
+    padding: .5625rem 1.25rem 0 1.1875rem;
+    border-left: 1px solid #cacaca;
+  }
+  .alignleft {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: middle;
   }
 </style>
