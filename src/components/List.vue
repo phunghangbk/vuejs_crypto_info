@@ -11,8 +11,8 @@
             path:'/coinDetail', 
             query:{
               id:ticker.id,
-              priceUSD:ticker.price_usd,
-              priceBTC:ticker.price_btc,
+              usd:ticker.price_usd,
+              btc:ticker.price_btc,
               marketcap:ticker.market_cap_usd,
               volume24h:ticker['24h_volume_usd'],
               availablesupply:ticker.available_supply,

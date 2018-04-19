@@ -8,7 +8,7 @@
           <p>USD: {{ priceUSD }}</p>
         </div>
         <div class="price_BTC">
-          <p>BTC: {{priceBTC}}</p>
+          <p>BTC: {{ priceBTC }}</p>
         </div>
       </div>
     </div>

@@ -116,7 +116,7 @@ export default {
   div.row {
     height: 50%;
   }
-  div.row > div > input, select{
+  div.row > div > input {
     text-indent: 0;
     color: #222;
     border-color: #00836b;
@@ -129,5 +129,18 @@ export default {
     line-height: 3rem;
     max-height: 32px;
     min-height: calc(2rem + 2px);
+  }
+  div.row > div > select {
+    text-indent: 0;
+    color: #222;
+    border-color: #00836b;
+    background-color: #fcfade;
+    background-position: 8px center;
+    box-shadow: 0 0 3px #00836b;
+    border: solid 1px #adadad;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 3rem;
+    height: 32px;
   }
 </style>
