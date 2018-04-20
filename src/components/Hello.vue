@@ -23,7 +23,8 @@ export default {
 <style scoped>
   h1 {
     font-size: 4em;
-    color: #d3e022;
+    color: #0ebf67;
+    font-family: 'Roboto Slab' !important;
   }
   .hello {
     height: 100%;

@@ -1,11 +1,21 @@
 <template>
   <div id="app">
     <div class="header">
-      <img src="../static/service_logo/cryptocurrency_logo.jpg">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/coins/ethereum">Ethereum</router-link>
-      <router-link to="/coins/bitcoin">Bitcoin</router-link>
+      <router-link to="/"><img src="../static/service_logo/header_logo.jpg"></router-link>
+      <div class="header_right">
+        <div class="button_home">
+          <router-link to="/">Home</router-link>
+        </div>
+        <div class="button_about">
+          <router-link to="/about">About</router-link>
+        </div>
+        <div class="button_ethereum">
+          <router-link to="/coins/ethereum">Ethereum</router-link>
+        </div>
+        <div class="button_bitcoin">
+          <router-link to="/coins/bitcoin">Bitcoin</router-link>
+        </div>
+      </div>
     </div>
     <router-view/>
     <div id="footer">
@@ -34,6 +44,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  height: 100%;
 }
 .header {
   position: fixed;
@@ -47,13 +58,10 @@ export default {
   z-index: 50;
 }
 
-#app .header > img {
-  width:120px;
-}
-
-body {
-  padding-top: 40px;
-  /*background-image: url('../static/service_logo/background-image.jpg');*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 40px 0 0 0;
 }
 
 #footer {
@@ -86,5 +94,42 @@ ul.nav > li {
 }
 ul.nav > li > a {
   color: white;
+}
+
+#app .header > a > img {
+  display: block;
+  margin: 10px 0 5px 150px;
+  float: left;
+}
+
+#app .header .header_right {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 150px 0 5px;
+}
+#app .header .header_right > div {
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 20px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #0ebf67;
+  transition: all .5s ease;
+  border-radius: 3px;
+}
+.button_home:hover, .button_about:hover, .button_ethereum:hover, .button_bitcoin:hover {
+  box-shadow: 0 20px 5px -10px #178042;
+  transform: translateY(10px);
+}
+#app .header .header_right > div > a {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  color: white;
+  text-decoration: none;
 }
 </style>

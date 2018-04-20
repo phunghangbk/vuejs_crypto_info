@@ -6,7 +6,7 @@
     </div>
     <div class="row">
       <ul class="cryptoList">
-        <li  v-for="ticker in tickersOnPerPage">
+        <li  class="card" v-for="ticker in tickersOnPerPage">
           <router-link :to="{
             path:'/coinDetail', 
             query:{
@@ -75,7 +75,7 @@ export default {
       axios.get('https://api.coinmarketcap.com/v1/ticker/')
       .then((resp) => {
         this.filteredItems = this.coin_tickers = resp.data;
-        console.log(this.coin_tickers[1].max_supply);
+        console.log(this.coin_tickers);
       })
       .catch((err) => {
         console.log(err)
@@ -134,5 +134,22 @@ export default {
   }
   .row {
     height: 100%;
+  }
+  li {
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    margin: 12px;
+    transition: .15s all ease-in-out;
+  }
+  li:hover {
+    transform: scale(1.05);
+  }
+  li > a {
+    text-decoration: none;
+    padding: 12px;
+    color: #0ebf67;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 </style>
