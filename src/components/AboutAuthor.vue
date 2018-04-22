@@ -4,6 +4,7 @@
       <a href="https://www.facebook.com/phunghangbk">
         <img src="../../static/service_logo/avatar.jpg">
       </a>
+      <p>Hang Phung</p>
     </div>
     <div class="right">
       <p>
@@ -32,10 +33,14 @@
 
 <style scoped>
   div#profile {
-    display: inline-block;
+    display: inline-flex;
+    padding-bottom: 35px;
+    width: 80%;
+    justify-content: center;
+    box-shadow: 0px 0px 3px 0px #178042;
   }
   div#profile > div.left {
-    margin: 0;
+    margin: 10px 0 0 0;
     float: left;
   }
   div#profile > div.right {
@@ -53,5 +58,13 @@
   }
   #profile > div > p > img {
     width: 120px;
+  }
+  .left > p {
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 768px) {
+    div#profile {
+      padding-top: 50px;
+    }
   }
 </style>

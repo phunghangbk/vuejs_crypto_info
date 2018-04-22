@@ -3,18 +3,26 @@
     <div class="header">
       <router-link to="/"><img src="../static/service_logo/header_logo.jpg"></router-link>
       <div class="header_right">
-        <div class="button_home">
-          <router-link to="/">Home</router-link>
-        </div>
-        <div class="button_about">
-          <router-link to="/about">About</router-link>
-        </div>
-        <div class="button_ethereum">
-          <router-link to="/coins/ethereum">Ethereum</router-link>
-        </div>
-        <div class="button_bitcoin">
-          <router-link to="/coins/bitcoin">Bitcoin</router-link>
-        </div>
+        <router-link to="/">
+          <div class="button_home">
+            Home
+          </div>
+        </router-link>
+        <router-link to="/about">
+          <div class="button_about">
+            About
+          </div>
+        </router-link>
+        <router-link to="/coins/ethereum">
+          <div class="button_ethereum">
+            Ethereum
+          </div>
+        </router-link>
+        <router-link to="/coins/bitcoin">
+          <div class="button_bitcoin">
+            Bitcoin
+          </div>
+        </router-link>
       </div>
     </div>
     <router-view/>
@@ -43,8 +51,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  height: 100%;
+  min-height: 100%;
 }
 .header {
   position: fixed;
@@ -100,6 +107,7 @@ ul.nav > li > a {
   display: block;
   margin: 10px 0 5px 150px;
   float: left;
+  width: 30%;
 }
 
 #app .header .header_right {
@@ -107,8 +115,9 @@ ul.nav > li > a {
   display: flex;
   flex-direction: row;
   margin: 5px 150px 0 5px;
+  width: 30%;
 }
-#app .header .header_right > div {
+#app .header .header_right > a > div {
   margin: 0 5px 0 0;
   width: 100px;
   height: 20px;
@@ -123,13 +132,42 @@ ul.nav > li > a {
   box-shadow: 0 20px 5px -10px #178042;
   transform: translateY(10px);
 }
-#app .header .header_right > div > a {
-  font-size: 16px;
+#app .header .header_right > a {
+  font-size: 15px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
   color: white;
   text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  #app .header .header_right {
+    float: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #app .header > a > img {
+    display: block;
+    margin: 10px 0 5px 0px;
+    float: left;
+    width: 100%;
+  }
+  #app .header .header_right > a > div {
+    margin: 0 5px 0 0;
+    max-width: 100px;
+    min-width: 50px;
+    height: 20px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #0ebf67;
+    transition: all .5s ease;
+    border-radius: 3px;
+  }
+  #app .header .header_right > div > a {
+    font-size: 50%;
+  }
 }
 </style>

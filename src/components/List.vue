@@ -75,7 +75,6 @@ export default {
       axios.get('https://api.coinmarketcap.com/v1/ticker/')
       .then((resp) => {
         this.filteredItems = this.coin_tickers = resp.data;
-        console.log(this.coin_tickers);
       })
       .catch((err) => {
         console.log(err)
@@ -117,7 +116,7 @@ export default {
   }
   ul.cryptoList > li {
     list-style: none;
-    width: 400px;
+    width: 20%;
     float: left;
     display: block;
     border: 1px solid #ccc!important;
@@ -151,5 +150,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  h1 {
+    font-size: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 50px;
+    }
   }
 </style>

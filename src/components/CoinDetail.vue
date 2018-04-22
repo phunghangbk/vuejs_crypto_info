@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="bottom">
-        <table>
+        <table class="horizontal">
           <tbody>
             <tr>
               <th>Market Cap</th>
@@ -33,6 +33,30 @@
               <th>{{changeFormatNumber(availablesupply)}}</th>
               <th>{{changeFormatNumber(totalsupply)}}</th>
               <th>{{changeFormatNumber(maxsupply)}}</th>
+            </tr>
+          </tbody>
+        </table>
+        <table class="vertical">
+          <tbody>
+            <tr>
+              <th>Market Cap</th>
+              <td>{{changeFormatNumber(marketcap)}}</td>
+            </tr>
+            <tr>
+              <th>Volume (24h)</th>
+              <td>{{changeFormatNumber(volume24h)}}</td>
+            </tr>
+            <tr>
+              <th>Avaiable Supply</th>
+              <td>{{changeFormatNumber(availablesupply)}}</td>
+            </tr>
+            <tr>
+              <th>Total Supply</th>
+              <td>{{changeFormatNumber(totalsupply)}}</td>
+            </tr>
+            <tr>
+              <th>Max Supply</th>
+              <td>{{changeFormatNumber(maxsupply)}}</td>
             </tr>
           </tbody>
         </table>
@@ -99,11 +123,13 @@
 <style scoped>
   #coin_detail {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    display: flex;
+    width: 80%;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    padding-bottom: 350px;
+    box-shadow: 0px 0px 3px 0px #178042;
   }
   .above_left {
     display: flex;
@@ -178,5 +204,53 @@
     padding: 21px;
     border-radius: 20px;
     box-shadow: #043117 0px 1px 6px;
+    width: 70%;
+  }
+  .horizontal {
+    display: block;
+  }
+  .vertical {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    #coin_detail {
+      padding-top: 50px;
+    }
+    .above {
+      display: inline-block;
+    }
+    .above_left {
+      display: inline-flex;
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 100%;
+    }
+    strong {
+      font-size: 100%;
+    }
+    .above_left > span {
+      font-size: 100%;
+    }
+    .above .above_left > img {
+      width: 20%;
+      height: 50%;
+    }
+    .above .prive {
+      display: inline-flex;
+      margin-left: unset;
+    }
+    .horizontal {
+      display: none;
+    }
+    .vertical {
+      display: inline;
+    }
+    tr:first-child {
+      background-color: unset;
+    }
+    th {
+      background-color: #0ebf67;
+    }
   }
 </style>
