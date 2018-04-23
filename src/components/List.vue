@@ -113,6 +113,7 @@ export default {
   ul.cryptoList {
     display: inline-block;
     height: auto;
+    width: 100%;
   }
   ul.cryptoList > li {
     list-style: none;
